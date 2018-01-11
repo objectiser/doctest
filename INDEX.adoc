@@ -1,8 +1,8 @@
 = Jaeger Tracing Documentation
 
 :link-github-project-ghpages: https://objectiser.github.io/doctest
-:link-gettingstarted-html: {link-github-project-ghpages}/gettingstarted.html
-:link-gettingstarted-pdf: {link-github-project-ghpages}/gettingstarted.pdf
+:link-getting-started-html: {link-github-project-ghpages}/getting_started.html
+:link-getting-started-pdf: {link-github-project-ghpages}/getting_started.pdf
 
-* {link-gettingstarted-html}[Getting Started Guide] {link-gettingstarted-pdf}[PDF]
+* {link-getting-started-html}[Getting Started Guide] {link-getting-started-pdf}[PDF]
 
