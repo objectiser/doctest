@@ -5,9 +5,7 @@ Jaeger - Getting Started
 :idprefix:
 :numbered:
 :imagesdir: images
-:toc: manual
-:css-signature: demo
-:toc-placement: preamble
+:css-signature: jaeger
 //:max-width: 800px
 //:doctype: book
 //:sectids!:
