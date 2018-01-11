@@ -1,0 +1,10 @@
+= Jaeger Tracing Docuementation
+
+:link-github-project-ghpages: https://objectiser.github.io/doctest
+:link-gettingstarted-html: {link-github-project-ghpages}/gettingstarted.html
+:link-gettingstarted-pdf: {link-github-project-ghpages}/gettingstarted.pdf
+
+How to convert *AsciiDoc* to *HTML/PDF* files output and publish it to *gh-pages* with *Travis CI, Asciidoctor and Docker*.
+
+* {link-gettingstarted-html}[Getting Started Guide] {link-gettingstarted-pdf}[PDF]
+
