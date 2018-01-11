@@ -3,13 +3,12 @@
 == Official libraries
 
 |===
-| Language | Library                                                      |
-| ---------|--------------------------------------------------------------|
-| go       | https://github.com/uber/jaeger-client-go[jaeger-client-go]       |
-| java     | https://github.com/uber/jaeger-client-java[jaeger-client-java]    |
-| node     | https://github.com/uber/jaeger-client-node[jaeger-client-node]    |
-| python   | https://github.com/uber/jaeger-client-python[jaeger-client-python]|
-| C++      | https://github.com/jaegertracing/cpp-client[cpp-client]           |
+| Language | Library
+| go       | https://github.com/uber/jaeger-client-go[jaeger-client-go]
+| java     | https://github.com/uber/jaeger-client-java[jaeger-client-java]
+| node     | https://github.com/uber/jaeger-client-node[jaeger-client-node]
+| python   | https://github.com/uber/jaeger-client-python[jaeger-client-python]
+| C++      | https://github.com/jaegertracing/cpp-client[cpp-client]
 |===
 
 For an introduction into instrumenting your service with the OpenTracing API using the Jaeger clients, see https://github.com/yurishkuro/opentracing-tutorial[OpenTracing Tutorials]
@@ -32,7 +31,7 @@ If you run into issue with `EMSGSIZE` errors, consider raising the limits in you
 You can also configure the client libraries to use a smaller max packet size, but that may cause
 issues if you have large spans, e.g. if you log big chunks of data. Spans that exceed max packet size
 are dropped by the clients (with metrics emitted to indicate that). Another alternative is
-to use non-UDP transports, such as [HttpSender in Java][HttpSender] (not currently available for all languages).
+to use non-UDP transports, such as https://github.com/jaegertracing/jaeger-client-java/blob/master/jaeger-core/src/main/java/com/uber/jaeger/senders/HttpSender.java[HttpSender in Java] (not currently available for all languages).
 
 == OpenTracing Contributions
 
@@ -84,7 +83,4 @@ When `SpanContext` is encoded on the wire, Jaeger client libraries default to th
 * Limitation: since HTTP headers don’t preserve the case, Jaeger recommends baggage keys to be lowercase-snake-case,
 e.g. `my-baggage-key-1`.
 
-
-
-[HttpSender]: https://github.com/uber/jaeger-client-java/blob/master/jaeger-core/src/main/java/com/uber/jaeger/senders/HttpSender.java
 

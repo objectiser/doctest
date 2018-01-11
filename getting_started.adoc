@@ -12,6 +12,8 @@ Jaeger - Getting Started
 //:doctype: book
 //:sectids!:
 
+:toc:
+
 == All in one Docker image
 
 This image, designed for quick local testing, launches the Jaeger UI, collector, query, and agent, with an in memory storage component.
@@ -29,7 +31,6 @@ The container exposes the following ports:
 
 |===
 |Port | Protocol | Component | Function
-|---- | -------  | --------- | ---
 |5775 | UDP      | agent     | accept zipkin.thrift over compact thrift protocol
 |6831 | UDP      | agent     | accept jaeger.thrift over compact thrift protocol
 |6832 | UDP      | agent     | accept jaeger.thrift over binary thrift protocol
@@ -115,6 +116,4 @@ By default it's disabled. It can be enabled with `--collector.zipkin.http-port=9
 
 Zipkin Thrift IDL file can be found in https://github.com/jaegertracing/jaeger-idl/blob/master/thrift/zipkincore.thrift[jaegertracing/jaeger-idl].
 It's compatible with https://github.com/openzipkin/zipkin-api/blob/master/thrift/zipkinCore.thrift[openzipkin/zipkin-api]
-
-[hotrod-tutorial]: https://medium.com/@YuriShkuro/take-opentracing-for-a-hotrod-ride-f6e3141f7941
 
